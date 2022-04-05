@@ -5,7 +5,7 @@ public class Adventure {
     private Player player;
 
     public Adventure() {
-        this.player = new Player();
+        this.player = new Player(100);
 
     }
 
