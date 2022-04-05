@@ -2,11 +2,10 @@ package com.company;
 
 public class Adventure {
 
-    private Player player;
+    private final Player player;
 
     public Adventure() {
-        this.player = new Player(100);
-
+        this.player = new Player(100,2);
     }
 
 
