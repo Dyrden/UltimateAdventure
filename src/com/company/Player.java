@@ -6,10 +6,7 @@ public class Player {
     private double totalDamage;
     private boolean poisoned;
     private int speed;
-
-
-
-
+    private Room currentRoom;
 
 
     public Player(double life, int speed) {
@@ -20,20 +17,28 @@ public class Player {
     }
 
 
-
-
-
-
-
-
-
-
-
     public boolean isPoisoned() {
         return poisoned;
     }
 
     public void setPoisoned(boolean poisoned) {
         this.poisoned = poisoned;
+    }
+
+
+    public Room getCurrentRoom() {
+        return currentRoom;
+    }
+
+    public void setCurrentRoom(Room currentRoom) {
+        this.currentRoom = currentRoom;
+    }
+
+
+    public void move(String direction) {
+        Room roomToGoTo = null;
+
+
+
     }
 }

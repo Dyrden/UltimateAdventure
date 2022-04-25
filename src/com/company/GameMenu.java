@@ -9,8 +9,16 @@ public class GameMenu {
 
 
     public static void main(String[] args) {
-
-        while(new GameMenu().run());
+        do {
+            System.out.println("""
+                            ULTIMATE ADVENTURE
+                                 'play'
+                             to start a game
+                                
+                                 'exit'
+                             to stop the game
+                    """);
+        } while(new GameMenu().run());
     }
 
     private boolean run() {
